@@ -1,0 +1,16 @@
+N = int(input('Количество билетов:' ))
+for i in (1, N + 1):
+    Age = int(input('Возраст посетителя:'))
+    if Age < 18:
+        Cost = 0
+    elif 18 <= Age < 25:
+        Cost = 990
+    elif Age >= 25:
+        Cost = 1390
+
+    Cost_sum = Cost
+    Cost_sum += Cost
+    if N > 3:
+        Cost_sum = 0.9*Cost_sum
+
+print(Cost_sum)
